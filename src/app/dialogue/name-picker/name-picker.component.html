@@ -1,0 +1,5 @@
+<div class="wrapper">
+    <input #firstName type="text" placeholder="First name">
+    <input #lastName type="text" placeholder="Last name">
+    <button (click)="saveName(firstName.value, lastName.value)"> {{ buttonText }} </button>
+</div>

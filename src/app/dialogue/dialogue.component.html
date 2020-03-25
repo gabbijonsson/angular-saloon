@@ -1,0 +1,28 @@
+<div class="greeting">
+    <p>{{ bartenderGreetingMessage }}</p>
+    <app-right-to-be-forgotten
+    (forgetGuestSubmit)="handleForgetGuestSubmitted($event)">
+    </app-right-to-be-forgotten>
+</div>
+
+<app-name-picker 
+    (guestNameSubmit)="handleNameSubmitted($event)"
+    [currentName]="lastName">
+</app-name-picker>
+
+
+<p *ngIf='bartenderTakeOrder != null'>
+    {{ bartenderTakeOrder }}
+</p>
+
+<app-select-beverage *ngIf="showBeverages"
+    (beverageSubmit)="handleBeverageSubmitted($event)">
+</app-select-beverage>
+
+<app-the-usual *ngIf="showTheUsual"
+    (beverageSubmit)="handleBeverageSubmitted($event)">
+</app-the-usual>
+
+<p *ngIf='bartenderConfirmOrder != null'>
+    {{ bartenderConfirmOrder }}
+</p>

@@ -1,0 +1,22 @@
+div {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: brown;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background: #434343;
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}

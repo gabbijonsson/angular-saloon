@@ -1,0 +1,9 @@
+<div>
+    <app-add-beverage (beverageSubmit)="chooseBeverage($event)">
+    </app-add-beverage>
+    <ul>
+        <li *ngFor="let beverage of beverages">
+            <button (click)="chooseBeverage(beverage)">{{ beverage.name }}</button>
+        </li>
+    </ul>
+</div>

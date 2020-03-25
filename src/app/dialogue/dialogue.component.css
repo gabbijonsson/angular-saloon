@@ -1,0 +1,19 @@
+* {
+    font-family: monospace;
+    color: yellow;
+}
+
+.greeting {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.greeting > p {
+    padding: 1rem;
+    max-width: 65%;
+}
+
+p {
+    padding: 1rem;
+}
